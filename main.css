@@ -1,3 +1,76 @@
 .bg {
     background-image: radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
+
+.head {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 90%;
+    padding: 0.5rem;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 5px;
+    font-family: 'Barlow Semi Condended', sans-serif;
+    font-weight: 700;
+}
+
+.title {
+    height: 3rem;
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #f1f1f1;
+}
+
+.scoreboard {
+    border-radius: 5px;
+    height: 3rem;
+    width: 20%;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 1.25rem;
+    color: #777777;
+}
+
+#score {
+    display: block;
+    font-weight: 400;
+    font-size: 0.5rem;
+}
+
+#scoreline {
+    display: block;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .head {
+        width: 70%;
+    }
+
+    .title {
+        height: 6rem;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .scoreboard {
+        height: 6rem;
+        line-height: 2rem;
+    }
+
+    #score {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    #scoreline {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .head {
+        width: 50%;
+    }
+}
