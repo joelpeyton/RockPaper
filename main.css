@@ -1,76 +1,183 @@
-.bg {
-    background-image: radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+html {
+    height: 100%;
 }
 
-.head {
-    display: flex;
-    margin: 0 auto;
-    margin-top: 4rem;
-    width: 90%;
-    padding: 0.5rem;
-    border: 3px solid hsl(217, 16%, 45%);
-    border-radius: 5px;
+body {
     font-family: 'Barlow Semi Condended', sans-serif;
     font-weight: 700;
 }
 
-.title {
-    height: 3rem;
+.bg {
+    background-image: radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.head {
+    margin: auto;
+    margin-top: 20px;
     width: 80%;
-    font-size: 1rem;
+    padding: 16px;
+    padding-right: 8px;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 7px;
+}
+
+.title {
     line-height: 1rem;
     color: #f1f1f1;
 }
 
 .scoreboard {
+    position: relative;
+    top: -54px;
     border-radius: 5px;
-    height: 3rem;
-    width: 20%;
+    height: 60px;
+    width: 70px;
     background-color: #f1f1f1;
     text-align: center;
-    line-height: 1.25rem;
     color: #777777;
+    float: right;
 }
 
 #score {
     display: block;
-    font-weight: 400;
     font-size: 0.5rem;
+    margin-top: 7px;
 }
 
 #scoreline {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-@media (min-width: 768px) {
+.gamepad {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 120px;
+    text-align: center;
+    background-image: url("./images/bg-triangle.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gamepad img {
+    position: relative;
+    top: 20px;
+}
+
+.circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.circle-blue {
+    top: -50px;
+    left: -50px;  
+    background-color:hsl(230, 89%, 65%);
+    box-shadow: 0px 2px hsl(230, 89%, 52%);
+}
+
+.circle-yellow {
+    left: 150px;
+    top: -150px;
+    background-color: hsl(40, 84%, 53%);
+    box-shadow: 0px 2px hsl(39, 89%, 49%);
+}
+
+.circle-red {
+    left: 50px;
+    top: -100px;
+    background-color: hsl(349, 70%, 56%);
+    box-shadow: 0px 2px hsl(349, 71%, 52%);
+}
+
+.circle-white {
+    top: 12px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px -2px #cccccc;
+}
+
+.rulesBtn {
+    width: auto;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid #f1f1f1;
+    border-radius: 7px;
+    color: #f1f1f1;
+    background-color: rgba(0 ,0 ,0 ,0);
+    padding: 8px 48px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f1f1f1;
+    color: #777777;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     .head {
-        width: 70%;
-    }
-
-    .title {
-        height: 6rem;
-        font-size: 2rem;
-        line-height: 2rem;
-    }
-
-    .scoreboard {
-        height: 6rem;
-        line-height: 2rem;
-    }
-
-    #score {
-        font-size: 1rem;
-        margin-top: 0.5rem;
-    }
-
-    #scoreline {
-        font-size: 3rem;
+        width: 60%;
     }
 }
-
-@media (min-width: 1024px) {
+ 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     .head {
         width: 50%;
     }
 }
+ 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .head {
+        width: 30%;
+    }
+
+    .gamepad {
+        width: 300px;
+        height: 300px;
+    }
+
+    .gamepad img {
+        top: 30px;
+    }
+
+    .circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    .circle-yellow {
+        top: -210px;
+        left: 200px;
+    }
+
+    .circle-red {
+        left: 70px;
+        top: -160px;
+    }
+
+    .circle-white {
+        width: 130px;
+        height: 130px;
+        top: 17px;
+        left: 15px;
+    }
+}
+ 
