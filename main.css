@@ -5,7 +5,6 @@ html {
 body {
     font-family: 'Barlow Semi Condended', sans-serif;
     font-weight: 700;
-    font-size: 3rem;
 }
 
 .bg {
@@ -17,25 +16,25 @@ body {
 
 .head {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     width: 80%;
     padding: 16px;
-    padding-right: 16px;
+    padding-right: 8px;
     border: 3px solid hsl(217, 16%, 45%);
     border-radius: 7px;
 }
 
 .title {
-    line-height: 3rem;
+    line-height: 1rem;
     color: #f1f1f1;
 }
 
 .scoreboard {
     position: relative;
-    top: -144px;
+    top: -54px;
     border-radius: 5px;
-    height: 144px;
-    width: 144px;
+    height: 60px;
+    width: 70px;
     background-color: #f1f1f1;
     text-align: center;
     color: #777777;
@@ -44,77 +43,77 @@ body {
 
 #score {
     display: block;
-    font-size: 1rem;
-    margin-top: 16px;
+    font-size: 0.5rem;
+    margin-top: 7px;
 }
 
 #scoreline {
     display: block;
-    font-size: 5rem;
+    font-size: 2rem;
 }
 
 .gamepad {
-    width: 540px;
-    height: 500px;
+    width: 200px;
+    height: 200px;
     margin: auto;
-    margin-top: 300px;
+    margin-top: 120px;
+    text-align: center;
     background-image: url("./images/bg-triangle.svg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .gamepad img {
     position: relative;
-    top: 60px;
-    left: 60px;
+    top: 20px;
 }
 
 .circle {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
     border-radius: 50%;
 }
 
 .circle-paper {
-    top: -150px;
-    left: -150px;  
+    top: -50px;
+    left: -50px;  
 }
 
 .blue {
     background-color:hsl(230, 89%, 65%);
-    box-shadow: 0px 6px hsl(230, 89%, 52%);
+    box-shadow: 0px 2px hsl(230, 89%, 52%);
 }
 
 .circle-scissors {
-    top: -450px;
-    left: 390px;
+    left: 150px;
+    top: -150px;
 }
 
 .yellow {
     background-color: hsl(40, 84%, 53%);
-    box-shadow: 0px 6px hsl(39, 89%, 49%)
+    box-shadow: 0px 2px hsl(39, 89%, 49%)
 }
 
 .circle-rock {
-    top: -310px;
-    left: 120px;
+    left: 50px;
+    top: -100px;
 }
 
 .red {
     background-color: hsl(349, 70%, 56%);
-    box-shadow: 0px 6px hsl(349, 71%, 52%);
+    box-shadow: 0px 2px hsl(349, 71%, 52%);
 }
 
 .circle-inner {
-    top: 26px;
-    left: 20px;
-    width: 260px;
-    height: 260px;
+    top: 12px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
     background-color: white;
-    box-shadow: 0px -6px #cccccc;
+    box-shadow: 0px -2px #cccccc;
 }
 
 .choices {
@@ -149,7 +148,7 @@ body {
 .rulesBtn {
     width: auto;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -158,9 +157,9 @@ body {
     border-radius: 7px;
     color: #f1f1f1;
     background-color: rgba(0 ,0 ,0 ,0);
-    padding: 16px 80px;
+    padding: 8px 48px;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 2rem;
 }
 
 .btn:hover {
@@ -170,17 +169,55 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    
+    .head {
+        width: 60%;
+    }
 
 }
  
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    .head {
+        width: 50%;
+    }
 }
  
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .head {
+        width: 30%;
+    }
 
+    .gamepad {
+        width: 300px;
+        height: 300px;
+    }
+
+    .gamepad img {
+        top: 30px;
+    }
+
+    .circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    .circle-scissors {
+        top: -210px;
+        left: 200px;
+    }
+
+    .circle-rock {
+        left: 70px;
+        top: -160px;
+    }
+
+    .circle-inner {
+        width: 130px;
+        height: 130px;
+        top: 17px;
+        left: 15px;
+    }
 }
  
