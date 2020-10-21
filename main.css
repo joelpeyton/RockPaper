@@ -5,6 +5,7 @@ html {
 body {
     font-family: 'Barlow Semi Condended', sans-serif;
     font-weight: 700;
+    font-size: 1rem;
 }
 
 .bg {
@@ -77,28 +78,37 @@ body {
     border-radius: 50%;
 }
 
-.circle-blue {
+.circle-paper {
     top: -50px;
     left: -50px;  
+}
+
+.blue {
     background-color:hsl(230, 89%, 65%);
     box-shadow: 0px 2px hsl(230, 89%, 52%);
 }
 
-.circle-yellow {
+.circle-scissors {
     left: 150px;
     top: -150px;
-    background-color: hsl(40, 84%, 53%);
-    box-shadow: 0px 2px hsl(39, 89%, 49%);
 }
 
-.circle-red {
+.yellow {
+    background-color: hsl(40, 84%, 53%);
+    box-shadow: 0px 2px hsl(39, 89%, 49%)
+}
+
+.circle-rock {
     left: 50px;
     top: -100px;
+}
+
+.red {
     background-color: hsl(349, 70%, 56%);
     box-shadow: 0px 2px hsl(349, 71%, 52%);
 }
 
-.circle-white {
+.circle-inner {
     top: 12px;
     left: 10px;
     width: 80px;
@@ -106,6 +116,35 @@ body {
     background-color: white;
     box-shadow: 0px -2px #cccccc;
 }
+
+.choices {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 120px;
+    border: 1px solid white;
+}
+
+.choices img {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.circle-player {
+    top: 50px;
+    left: -50px;
+}
+
+.circle-computer {
+    top: -50px;
+    left: 150px;
+}
+
+.hidden {
+    background-color: #15183b;
+}
+
 
 .rulesBtn {
     width: auto;
@@ -163,17 +202,17 @@ body {
         height: 160px;
     }
 
-    .circle-yellow {
+    .circle-scissors {
         top: -210px;
         left: 200px;
     }
 
-    .circle-red {
+    .circle-rock {
         left: 70px;
         top: -160px;
     }
 
-    .circle-white {
+    .circle-inner {
         width: 130px;
         height: 130px;
         top: 17px;

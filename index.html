@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Joel Peyton, full stack web developer showcasing a portfolio of work">
-  <meta name="keywords" content="css, html, javascript, php, python, sql, mongodb, responsive web design">
-  <meta name="author" content="Joel Peyton">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta choices-titles="description" content="Joel Peyton, full stack web developer showcasing a portfolio of work">
+  <meta choices-titles="keywords" content="css, html, javascript, php, python, sql, mongodb, responsive web design">
+  <meta choices-titles="author" content="Joel Peyton">
+  <meta choices-titles="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Font awesome -->
   <link rel="stylesheet" href="../../fontawesome/css/all.css">
@@ -27,44 +27,69 @@
   <title>Rock, Paper, Scissors</title>
 </head>
 <body class="bg">
-  
-  <div class="container-fluid">
     
-    <!-- Head, contains title and score-->
-    <div class="head">
-      <div class="title">ROCK<br>PAPER<br>SCISSORS</div>
-      <div class="scoreboard">
-        <span id="score">SCORE</span>
-        <span id="scoreline">0</span>
+  <!-- Head -->
+  <div class="head">
+
+    <!-- Title -->
+    <div class="title">ROCK<br>PAPER<br>SCISSORS</div>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <span id="score">SCORE</span>
+      <span id="scoreline">0</span>
+    </div>
+
+  </div> <!-- End head-->
+
+  <!-- Gamepad-->
+  <div class="gamepad" style="display: block;">
+    
+    <!-- Paper -->
+    <div class="circle circle-paper blue">
+      <div class="circle circle-inner">
+        <img src="./images/icon-paper.svg" width="50%" height="50%">
       </div>
     </div>
 
-    <!-- Game pad-->
-    <div class="gamepad">
-      <div class="circle circle-blue">
-        <div class="circle circle-white">
-          <img src="./images/icon-paper.svg" width="50%" height="50%">
-        </div>
-      </div>
-      <div class="circle circle-yellow">
-        <div class="circle circle-white">
-          <img src="./images/icon-scissors.svg" width="50%" height="50%">
-        </div>
-      </div>
-      <div class="circle circle-red">
-        <div class="circle circle-white">
-          <div class="rock">
-            <img src="./images/icon-rock.svg" width="50%" height="50%">
-          </div>
-        </div>
+    <!-- Scissors -->
+    <div class="circle circle-scissors yellow">
+      <div class="circle circle-inner">
+        <img src="./images/icon-scissors.svg" width="50%" height="50%">
       </div>
     </div>
 
-    <!-- Rules button -->
-    <div class="rulesBtn">
-      <button class="btn">RULES</button>
+    <!-- Rock-->
+    <div class="circle circle-rock red">
+      <div class="circle circle-inner">
+        <img src="./images/icon-rock.svg" width="50%" height="50%">
+      </div>
     </div>
-    
-  </div> <!-- End of container -->
+
+  </div> <!-- End gamepad -->
+
+  <!-- Choices -->
+  <div class="choices" style="display: none;">
+    <!-- Player -->
+    <div class="circle circle-player red">
+      <div class="circle circle-inner">
+        <img src="./images/icon-rock.svg" width="50%" height="50%">
+      </div>
+    </div>
+
+    <!-- Computer -->
+    <div class="circle circle-computer hidden">
+      <div class="circle circle-inner" style="display: none;">
+        <img src="./images/icon-rock.svg" width="50%" height="50%" style="display: none;">
+      </div>
+    </div>
+
+  </div> <!-- End choices -->
+
+  <!-- Rules button -->
+  <div class="rulesBtn">
+    <button class="btn">RULES</button>
+  </div>
+
 </body>
 </html>
