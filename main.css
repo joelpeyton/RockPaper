@@ -4,6 +4,7 @@ html {
 
 body {
     font-family: 'Barlow Semi Condended', sans-serif;
+    font-weight: 700;
     color: #f1f1f1;
 }
 
@@ -26,7 +27,6 @@ body {
 
 .title {
     line-height: 1rem;
-    font-weight: 700;
 }
 
 .scoreboard {
@@ -161,7 +161,6 @@ body {
 
 .result {
     font-size: 1.5rem;
-    font-weight: 700;
     text-align: center;
 }
 
@@ -185,6 +184,7 @@ body {
     background-color: rgba(0 ,0 ,0 ,0);
     padding: 8px 48px;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .btn:hover {
@@ -211,7 +211,6 @@ body {
     left: 10%;
     color: #777777; 
     font-size: 2rem; 
-    font-weight: 700; 
     width: 80%;
     margin-right: 1rem;
 }
@@ -219,6 +218,18 @@ body {
 .rules-title img {
     float: right; 
     cursor: pointer;
+}
+
+.gamepad,
+.choices,
+.result,
+.playBtn,
+.rules {
+    display: none;
+}
+
+.gamepad {
+    display: block;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
