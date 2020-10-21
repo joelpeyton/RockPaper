@@ -4,7 +4,7 @@ html {
 
 body {
     font-family: 'Barlow Semi Condended', sans-serif;
-    font-weight: 700;
+    color: #f1f1f1;
 }
 
 .bg {
@@ -26,7 +26,7 @@ body {
 
 .title {
     line-height: 1rem;
-    color: #f1f1f1;
+    font-weight: 700;
 }
 
 .scoreboard {
@@ -56,7 +56,7 @@ body {
     width: 200px;
     height: 200px;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 100px;
     text-align: center;
     background-image: url("./images/bg-triangle.svg");
     background-position: center;
@@ -84,7 +84,7 @@ body {
 
 .blue {
     background-color:hsl(230, 89%, 65%);
-    box-shadow: 0px 2px hsl(230, 89%, 52%);
+    box-shadow: 0px 6px hsl(230, 89%, 52%);
 }
 
 .circle-scissors {
@@ -94,7 +94,7 @@ body {
 
 .yellow {
     background-color: hsl(40, 84%, 53%);
-    box-shadow: 0px 2px hsl(39, 89%, 49%)
+    box-shadow: 0px 6px hsl(39, 89%, 49%)
 }
 
 .circle-rock {
@@ -104,7 +104,7 @@ body {
 
 .red {
     background-color: hsl(349, 70%, 56%);
-    box-shadow: 0px 2px hsl(349, 71%, 52%);
+    box-shadow: 0px 6px hsl(349, 71%, 52%);
 }
 
 .circle-inner {
@@ -113,15 +113,30 @@ body {
     width: 80px;
     height: 80px;
     background-color: white;
-    box-shadow: 0px -2px #cccccc;
+    box-shadow: 0px 6px #cccccc inset;
 }
 
 .choices {
     width: 200px;
     height: 200px;
     margin: auto;
-    margin-top: 120px;
-    border: 1px solid white;
+    margin-top: 50px;
+}
+
+.choices-title {
+    position: relative;
+    width: 120px;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.c-t-1 {
+    left: -60px;
+}
+
+.c-t-2 {
+    top: -16px;
+    left: 140px;
 }
 
 .choices img {
@@ -131,12 +146,12 @@ body {
 }
 
 .circle-player {
-    top: 50px;
+    top: 0px;
     left: -50px;
 }
 
 .circle-computer {
-    top: -50px;
+    top: -100px;
     left: 150px;
 }
 
@@ -144,21 +159,31 @@ body {
     background-color: #15183b;
 }
 
+.result {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.playBtn {
+    top: 10px;
+}
 
 .rulesBtn {
-    width: auto;
-    margin: auto;
-    margin-top: 100px;
+    top: 50px;
+}
+
+.center{
     text-align: center;
 }
 
 .btn {
+    position: relative;
     border: 2px solid #f1f1f1;
     border-radius: 7px;
     color: #f1f1f1;
     background-color: rgba(0 ,0 ,0 ,0);
     padding: 8px 48px;
-    font-size: 16px;
     cursor: pointer;
 }
 
@@ -169,11 +194,9 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
     .head {
         width: 60%;
     }
-
 }
  
 /* Medium devices (landscape tablets, 768px and up) */
@@ -218,6 +241,35 @@ body {
         height: 130px;
         top: 17px;
         left: 15px;
+    }
+
+    .choices {
+        width: 300px;
+        height: 300px;
+        margin-top: 100px;
+    }
+
+    .choices img {
+        top: 30px;
+        left: 30px;
+    }
+
+    .c-t-1 {
+        left: -60px;
+    }
+    
+    .c-t-2 {
+        left: 240px;
+    }
+    
+    .circle-player {
+        top: 20px;
+        left: -80px;
+    }
+    
+    .circle-computer {
+        top: -140px;
+        left: 220px;
     }
 }
  

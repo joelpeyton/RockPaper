@@ -43,7 +43,7 @@
   </div> <!-- End head-->
 
   <!-- Gamepad-->
-  <div class="gamepad">
+  <div class="gamepad" style="display: none;">
     
     <!-- Paper -->
     <div class="circle circle-paper blue">
@@ -69,7 +69,13 @@
   </div> <!-- End gamepad -->
 
   <!-- Choices -->
-  <div class="choices" style="display: none;">
+  <div class="choices" style="display: block;">
+    <div class="choices-title c-t-1">
+      YOU PICKED
+    </div>
+    <div class="choices-title c-t-2">
+      COMPUTER PICKED
+    </div>
     <!-- Player -->
     <div class="circle circle-player red">
       <div class="circle circle-inner">
@@ -78,17 +84,25 @@
     </div>
 
     <!-- Computer -->
-    <div class="circle circle-computer hidden">
-      <div class="circle circle-inner" style="display: none;">
-        <img src="./images/icon-rock.svg" width="50%" height="50%" style="display: none;">
+    <div class="circle circle-computer blue">
+      <div class="circle circle-inner">
+        <img src="./images/icon-paper.svg" width="50%" height="50%">
       </div>
     </div>
 
   </div> <!-- End choices -->
 
+  <!-- Result -->
+  <div class="result" style="display: block;">YOU LOSE</div>
+
+  <!-- Play Again-->
+  <div class="center" style="display: block;">
+    <button class="btn playBtn">PLAY AGAIN</button>
+  </div>
+
   <!-- Rules button -->
-  <div class="rulesBtn">
-    <button class="btn">RULES</button>
+  <div class="center">  
+    <button class="btn rulesBtn">RULES</button>
   </div>
 
 </body>
