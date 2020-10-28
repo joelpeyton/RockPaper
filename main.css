@@ -94,7 +94,7 @@ body {
 
 .yellow {
     background-color: hsl(40, 84%, 53%);
-    box-shadow: 0px 6px hsl(39, 89%, 49%)
+    box-shadow: 0px 6px hsl(39, 89%, 49%);
 }
 
 .circle-rock {
@@ -108,7 +108,7 @@ body {
 }
 
 .circle-inner {
-    top: 12px;
+    top: 10px;
     left: 10px;
     width: 80px;
     height: 80px;
@@ -223,7 +223,7 @@ body {
 .gamepad,
 .choices,
 .result,
-.playBtn,
+#playAgain,
 .rules {
     display: none;
 }

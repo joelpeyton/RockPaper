@@ -47,21 +47,21 @@
     
     <!-- Paper -->
     <div class="circle circle-paper blue">
-      <div class="circle circle-inner">
+      <div id="paper" class="circle circle-inner">
         <img src="./images/icon-paper.svg" width="50%" height="50%">
       </div>
     </div>
 
     <!-- Scissors -->
     <div class="circle circle-scissors yellow">
-      <div class="circle circle-inner">
+      <div id="scissors" class="circle circle-inner">
         <img src="./images/icon-scissors.svg" width="50%" height="50%">
       </div>
     </div>
 
     <!-- Rock-->
     <div class="circle circle-rock red">
-      <div class="circle circle-inner">
+      <div id="rock" class="circle circle-inner">
         <img src="./images/icon-rock.svg" width="50%" height="50%">
       </div>
     </div>
@@ -78,17 +78,16 @@
     </div>
 
     <!-- Player -->
-    <div class="circle circle-player red">
+    <div class="circle circle-player">
       <div class="circle circle-inner">
-        <img src="./images/icon-rock.svg" width="50%" height="50%">
+        <img id="playerImg" src="" width="50%" height="50%">
       </div>
     </div>
 
     <!-- Computer -->
-    <div class="circle circle-computer blue">
+    <div class="circle circle-computer">
       <div class="circle circle-inner">
-      
-        <img src="./images/icon-paper.svg" width="50%" height="50%">
+        <img id="computerImg" src="" width="50%" height="50%">
       </div>
     </div>
   
@@ -96,10 +95,10 @@
   </div> <!-- End choices -->
 
   <!-- Result -->
-  <div class="result">YOU LOSE</div>
+  <div class="result"><!-- result goes here --></div>
 
   <!-- Play Again-->
-  <div class="center">
+  <div id="playAgain" class="center">
     <button class="btn playBtn">PLAY AGAIN</button>
   </div>
 
@@ -115,6 +114,7 @@
       <img src="./images/icon-close.svg" width="32px" height="32px" alt="close">
     </div>
   </div>  
-
+  <script src="./main.js"></script>
+  <script src="./App.js"></script>
 </body>
 </html>
