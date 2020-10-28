@@ -56,7 +56,7 @@ body {
     width: 200px;
     height: 200px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 140px;
     text-align: center;
     background-image: url("./images/bg-triangle.svg");
     background-position: center;
@@ -220,16 +220,11 @@ body {
     cursor: pointer;
 }
 
-.gamepad,
 .choices,
 .result,
 #playAgain,
 .rules {
     display: none;
-}
-
-.gamepad {
-    display: block;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -246,7 +241,7 @@ body {
     }
 
     .rules {
-        top: 200px;
+        top: 190px;
         left: 25%;
         width: 50%;
         height: calc(100% - 500px);

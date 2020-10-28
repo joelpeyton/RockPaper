@@ -152,3 +152,15 @@ rock.onmouseup = function() {
         rock.style.boxShadow = "0px 6px #cccccc inset";
     }, 500);  
 };
+
+const rulesBtn = document.querySelector(".rulesBtn");
+const rules = document.querySelector(".rules");
+const rulesClose = document.querySelector("#rulesClose");
+
+rulesBtn.onclick = function() {
+    rules.style.display = "block";
+}
+
+rulesClose.onclick = function() {
+    rules.style.display = "none";
+}
